@@ -1,6 +1,6 @@
 import { SyntaxError } from '../../../common/SyntaxError';
 import { CommandPayload, CommandValue, ValidatorFn } from '../../../types';
-import { GetNumberFromValue } from './Utils';
+import { GetNumberFromValue } from './utils';
 
 export const isNumber = (
   payload: CommandPayload,

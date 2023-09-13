@@ -1,6 +1,6 @@
 import { Board } from '../../board/Board';
 import { Command, CommandPayload } from '../../types';
-import { GetNumberFromValue } from './Common/Utils';
+import { GetNumberFromValue } from './Common/utils';
 import { isNumber, isPositive, validate } from './Common/validators';
 
 export default class PenWidth implements Command {
