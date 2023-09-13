@@ -6,6 +6,7 @@ import { delay } from '../utils/utils';
 import { isError, isSyntaxError } from './turtler/common/utils';
 import { BehaviorSubject } from 'rxjs';
 
+const DELAY_TIME_BETWEEN_COMMANDS = 250;
 @Injectable({
   providedIn: 'root',
 })
@@ -30,7 +31,7 @@ export class KrutleLanguageParserService {
 
     for (const payload of commandPayloads) {
       await payload.command.Perform(payload, this.board);
-      await delay(250);
+      await delay(DELAY_TIME_BETWEEN_COMMANDS);
     }
   }
 
