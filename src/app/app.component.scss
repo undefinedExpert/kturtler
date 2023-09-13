@@ -5,9 +5,17 @@
     flex: 1 1 100%;
 }
 
-.editor {
+.code {
     display: flex;
     flex: 1 1;
     max-width: 50%;
     flex-direction: column;
+
+    .editor {
+        max-height: calc(100% - 2rem);
+    }
+
+    .infobar {
+        min-height: 2rem;
+    }
 }

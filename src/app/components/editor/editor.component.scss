@@ -44,14 +44,12 @@ $LINE_HEIGHT: 21px;
 .input {
     z-index: 1;
     line-height: $LINE_HEIGHT;
-    flex-grow: 1;
     padding: 0;
     border: 0;
     background-color: transparent;
     outline: none;
     resize: none;
     flex: 1;
-    inset: none;
     color: inherit;
 }
 

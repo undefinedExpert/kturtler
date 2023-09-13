@@ -6,7 +6,7 @@ import { delay } from '../utils/utils';
 import { isError, isSyntaxError } from './turtler/common/utils';
 import { BehaviorSubject } from 'rxjs';
 
-const DELAY_TIME_BETWEEN_COMMANDS = 250;
+const DELAY_TIME_BETWEEN_COMMANDS = 100;
 @Injectable({
   providedIn: 'root',
 })
