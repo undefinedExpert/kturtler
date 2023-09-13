@@ -35,7 +35,6 @@ forward 100`;
     this.textValueSubject
       .pipe(debounceTime(1000), takeUntil(this.destroy$))
       .subscribe((value: string) => {
-        console.log('run?');
         turtler.setProgram(value);
         turtler.run();
       });

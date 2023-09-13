@@ -2,18 +2,19 @@
     display: flex;
     justify-content: space-between;
     background-color: var(--color-primary);
-    margin: 4px 0 0 0;
-    color: lighten(#0C1821, 25%);
+    margin: var(--distance-extra-small) 0 0 0;
+    color: color-mix(in srgb, var(--color-secondary) 75%, var(--color-white));
 }
 
 .button {
-    background-color: lighten(#0C1821, 10%);
+    color: color-mix(in srgb, var(--text-color-default) 75%, var(--color-white));
+    background-color: color-mix(in srgb, var(--color-secondary) 90%, var(--color-white));
     border: none;
     font-size: inherit;
     transition: background-color 0.3s ease, color 0.3s ease;
-    width: 128px;
-    padding: 4px 0;
-    color: lighten(#CCC9DC, 25%);
+    width: 12.8rem;
+    padding: var(--distance-extra-small) 0;
+    color: color-mix(in srgb, var(--text-color-default) 75%, var(--color-white));
     cursor: pointer;
 
     &:disabled {
@@ -23,12 +24,12 @@
     &:disabled,
     &:hover {
         color: var(--color-white);
-        background-color: rgb(141, 218, 141);
+        background-color: var(--color-sucess);
     }
 }
 
 .info-item {
-    margin: 0 4px;
+    margin: 0 var(--distance-extra-small);
 }
 
 .status {

@@ -3,7 +3,9 @@
     --color-black: black;
     --color-primary: #0d1319;
     --color-secondary: #0C1821;
-    --color-error: rgb(183, 54, 54);;
+    --color-error: rgb(183, 54, 54);
+    --color-sucess: rgb(141, 218, 141);
+    --color-cursor: rgb(255, 0, 0);
 
     --text-color-default: #CCC9DC;
     --font-size-extra-small: 0.8rem;
@@ -22,8 +24,7 @@
     --distance-large: 3rem;
     --distance-extra-large: 4.5rem;
 
-    --input-height-default: 4rem;
-    --layout-width-default: 64rem;
+    --layout-width-default: 72rem;
 }
 
 html, body, .root {
@@ -46,13 +47,13 @@ html {
 }
 
 body {
-    color: var(--text-color-default);
-    background-color: var(--color-black);
-    font-size: var(--font-size-default);
     padding: 0;
     margin: 0;
     min-height: 100vh;
-    min-width: 72rem;
+    min-width: var(--layout-width-default);
+    color: var(--text-color-default);
+    background-color: var(--color-black);
+    font-size: var(--font-size-default);
 }
 
 button,

@@ -21,10 +21,7 @@ export class InfobarComponent implements OnDestroy {
   }
 
   handleRun(): void {
-    console.log(this.isCompleted);
-    console.log(this.errorMessage);
     this.turtler.run();
-    // this.run(this.textValue);
   }
 
   ngOnDestroy(): void {

@@ -24,8 +24,8 @@
 
 .cursor {
     display: none;
-    background-color: var(--color-error);
-    height: 16px;
-    width: 16px;
     position: absolute;
+    background-color: var(--color-cursor);
+    height: var(--distance-default);
+    width: var(--distance-default);
 }
