@@ -1,0 +1,9 @@
+<div class="info-item error">
+  <div *ngIf="!!errorMessage">Error: {{ errorMessage }}</div>
+</div>
+<div class="status">
+  <button class="button" (click)="handleRun()" [disabled]="!isCompleted">
+    <div class="info-item status-runs" *ngIf="!isCompleted">Runs</div>
+    <div class="info-item status-stopped" *ngIf="isCompleted">Run</div>
+  </button>
+</div>

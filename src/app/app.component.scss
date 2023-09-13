@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    justify-content: stretch;
+    height: 100%;
+    flex: 1 1 100%;
+}
+
+.editor {
+    display: flex;
+    flex: 1 1;
+    max-width: 50%;
+    flex-direction: column;
+}

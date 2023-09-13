@@ -1,0 +1,40 @@
+:host {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-primary);
+    margin: 4px 0 0 0;
+    color: lighten(#0C1821, 25%);
+}
+
+.button {
+    background-color: lighten(#0C1821, 10%);
+    border: none;
+    font-size: inherit;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: 128px;
+    padding: 4px 0;
+    color: lighten(#CCC9DC, 25%);
+    cursor: pointer;
+
+    &:disabled {
+        cursor: wait;
+    }
+
+    &:disabled,
+    &:hover {
+        color: var(--color-white);
+        background-color: rgb(141, 218, 141);
+    }
+}
+
+.info-item {
+    margin: 0 4px;
+}
+
+.status {
+    display: flex;
+}
+
+.error {
+    color: var(--color-error);
+}

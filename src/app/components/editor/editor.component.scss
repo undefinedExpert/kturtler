@@ -1,0 +1,72 @@
+:host {
+    display: inline-flex;
+    flex-grow: 1;
+    gap: 10px;
+    font-family: monospace;
+    line-height: 21px;
+    background: var(--color-primary);
+    border-radius: 2px;
+    padding: 20px 10px;
+}
+
+.code-editor {
+    display: flex;
+    padding: 8px 16px;
+    background-color: var(--color-secondary);
+    flex-grow: 1;
+    position: relative;
+
+    &::before {
+        content: '';
+        transition: background-color 0.15s ease-in-out;
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: calc(100% - 32px);
+        height: 100%;
+        padding-left: inherit;
+        padding-right: inherit;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    &.status-runs {
+        &::before {
+            background-color: color-mix(in srgb, var(--color-secondary) 95%, var(--color-white));
+        }
+    }
+
+    .input {
+        z-index: 1;
+        line-height: 21px;
+        flex-grow: 1;
+        padding: 0;
+        border: 0;
+        background-color: transparent;
+        outline: none;
+        resize: none;
+        flex: 1;
+        inset: none;
+        color: inherit;
+    }
+}
+
+.line-numbers {
+    text-align: right;
+    padding: 8px 4px;
+}
+
+.line-numbers span {
+    counter-increment: linenumber;
+}
+
+.line-numbers span::before {
+    content: counter(linenumber);
+    display: block;
+    color: lighten(#0d1319, 25%);
+}
+
+.running {
+    opacity: 0.5;
+}

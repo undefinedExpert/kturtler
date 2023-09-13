@@ -1,0 +1,10 @@
+<div class="line-numbers">
+  <span *ngFor="let line of lines"></span>
+</div>
+<div class="code-editor" [ngClass]="{ 'status-runs': !isCompleted }">
+  <textarea
+    class="input"
+    [(ngModel)]="textValue"
+    (input)="handleInput(textValue)"
+  ></textarea>
+</div>
